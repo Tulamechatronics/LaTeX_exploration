@@ -1,0 +1,119 @@
+\documentclass{beamer}
+\hypersetup{pdfpagemode=FullScreen}
+\usetheme{Madrid}%You can choose any theme you like the most
+\usepackage{polyglossia}%You can translate from English to any language
+\usepackage{multicol}
+\usepackage{amsmath}
+\usepackage{mathtools}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{icomma}
+\newfontfamily\khmerfont[Script=Khmer]{Khmer OS Content}
+\newfontfamily\englishfont{Latin Modern Roman}
+\setdefaultlanguage[numerals=khmer]{khmer}
+\setsansfont[Script=Khmer]{Khmer OS Content}
+\setmonofont[Script=Khmer]{Khmer OS Content}
+\XeTeXlinebreaklocale "KHM"
+\usepackage{ucharclasses}
+\setTransitionsForLatin{\begingroup\englishfont}{\endgroup}
+%\title{\LaTeXe\ ភាសាខ្មែរ}
+\title{ដែន និង កម្លាំងម៉ាញេទិច}
+\author[គ្រូជំនួយ៖ រិទ្ធ ឧត្តម]{ដែនម៉ាញេទិចនៃចរន្តអគ្គិសនី}
+\institute{E2stem }
+
+\begin{document}
+		\titlepage
+	\begin{frame}{មាតិការ}
+		\tableofcontents
+	\end{frame}
+	\section{ដែននៃចរន្តត្រង់}
+	\begin{frame}{លីមីតនៃអនុគមន៍ត្រីកោណមាត្រ}
+		\begin{block}{គណនាលីមីតនៃអនុគមន៍ខាងក្រោម៖}
+		\begin{multicols}{2}
+			\begin{enumerate}[a)]
+			\end{enumerate}
+		\end{multicols}
+		\end{block}
+	%
+		\begin{block}{រូបមន្តគោលដែលត្រូវប្រើ}
+			\begin{itemize}
+				\item $ \lim\limits_{u\to 0} \dfrac{\sin u}{u}=1$ ឬ $  \lim\limits_{u\to 0} \dfrac{\sin^n u}{u^n}=1 $ ដែល $ n\geq1 $
+				\item ទិសកែងនឹងប្លង់កំណត់ដោយខ្សែ $ PQ $  និងចំណុច $ M $
+				\item $ 1-\cos ax=2\sin^2 \dfrac{a}{2}x $
+				\item តម្លៃអាំងឌុចស្យុងម៉ាញេទិច $ \vec{B}$ សមាមាត្រទៅនឹងអាំងតង់ស៊ីតេចរន្តអគ្គិសនី ហើយច្រាសសមាមាត្រទៅនឹងចម្ងាយពីចំណុចទៅខ្សែ $ B = \frac{\mu_0 I}{2 \pi d} $ ករណីក្នុងសុញ្ញកាស
+			\end{itemize}
+		\end{block}
+\end{frame}
+%
+	\section{ការដំឡើងកម្មវិធី \LaTeX{}}
+	\begin{frame}{របៀបដំឡើង \LaTeX{}}
+		\begin{definition}[កម្មវិធី \LaTeX{}]
+			សរសេរខ្លឹមសារទីនេះ
+		\end{definition}
+		%
+		\begin{example}[ការណែនាំ]
+		សរសេរខ្លឹមសារទីនេះ
+		\end{example}
+	\end{frame}
+		\subsection{ចំពោះម៉ាស៊ីនប្រតិបត្តការណ៍ Windows}
+		\begin{frame}{ម៉ាស៊ីនប្រតិបត្តការណ៍ Windows}
+			\begin{columns}
+				%
+				\begin{column}{0.47\textwidth}
+					\begin{theorem}
+						សរសេរខ្លឹមសារទីនេះ
+					\end{theorem}
+				\end{column}
+				%
+				\begin{column}{0.47\textwidth}
+					\begin{proof}
+						សរសេរខ្លឹមសារទីនេះ
+					\end{proof}
+				\end{column}
+			\end{columns}
+		\end{frame}
+	\subsection{ចំពោះម៉ាស៊ីនប្រតិបត្តការណ៍ Mac}
+		\begin{frame}{ម៉ាស៊ីនប្រតិបត្តការណ៍ Mac}
+			លោកអ្នកអាចចូរទៅកាន់ Website​.....
+		\end{frame}
+	\subsection{ចំពោះម៉ាស៊ីនប្រតិបត្តការណ៍ Unix}
+		\begin{frame}{ម៉ាស៊ីនប្រតិបត្តការណ៍ Unix}
+			\begin{enumerate}
+				\item ចំណុច
+			\begin{enumerate}[a)]
+				\item ចំណុច
+				\item ចំណុច
+				\item ចំណុច
+			\end{enumerate}
+			\item ចំណុច
+			\begin{enumerate}[a)]
+				\item ចំណុច
+				\item ចំណុច
+				\item ចំណុច
+			\end{enumerate}
+			\item ចំណុច
+			\begin{enumerate}[a)]
+				\item ចំណុច
+				\item ចំណុច
+				\item ចំណុច
+			\end{enumerate}
+		\end{enumerate}
+	\end{frame}
+	\section{ឯកសារយោង}
+	\begin{frame}{ប្រភពនៃឯកសារ}
+		\begin{thebibliography}{4}
+			\bibitem{lamport94}
+			Leslie Lamport,
+			\emph{\LaTeX: a document preparation system}.
+			Addison Wesley, Massachusetts,
+			2nd edition,
+			1994.
+				\bibitem{lamport94}
+			Leslie Lamport,
+			\emph{\LaTeX: a document preparation system}.
+			Addison Wesley, Massachusetts,
+			2nd edition,
+			1994.
+		\end{thebibliography}
+	\end{frame}
+\end{document}
