@@ -1,1 +1,1 @@
-# Use this book, you will mastery LaTex 
+# Use these 2 books, you will mastery LaTex 
