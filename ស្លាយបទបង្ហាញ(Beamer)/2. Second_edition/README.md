@@ -1,4 +1,5 @@
 ### I modified some parts
+> file **.zip** contain source code **main.tex** + pictures that add in slide
 **Date : 21/April/2022**
 - add pictures with caption
 - table of contents with subtopics
