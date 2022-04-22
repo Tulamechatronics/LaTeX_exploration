@@ -1,0 +1,361 @@
+\documentclass[11pt]{beamer} % Khai báo dùng gói beamer
+\usetheme{Madrid} %Khai báo gói chủ đề trình chiếu (theme)
+\usefonttheme{serif}
+\usepackage[utf8]{vietnam}
+\usepackage{hyperref}
+\hypersetup{
+	colorlinks=true,
+	linkcolor=red,
+	filecolor=magenta,      
+	urlcolor=cyan,
+}
+\title[\textcolor{white}{Ôn thi THPT Quốc Gia 2016}]{\LARGE \textbf{PHÂN TÍCH ĐỀ THI THPT\\ QUỐC GIA 2016}}
+\author[Tăng Lâm Tường Vinh (Môn Toán)]{} %Tên tác giả
+\date{}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{graphicx}
+\usepackage{url}
+\usepackage{color}
+\usepackage{pgf,tikz}
+\usepackage{mathrsfs}
+\usetikzlibrary{arrows}
+\usepackage{tkz-tab}
+
+\newcommand{\parallelsum}{\mathbin{\!/\mkern-5mu/\!}}
+\newcommand\Fontvi{\fontsize{9}{7.2}\selectfont}
+\newcommand{\C}{\mbox{\textbf{C}}}
+\newcommand\FontviTen{\fontsize{8.5}{7.2}\selectfont}
+\newcommand{\cau}[2]{\begin{block}{}
+		{\color{red}\textbf{Câu #1.}} #2
+	\end{block}
+}
+\newcommand{\divColSeven}[2]{\begin{tabular}{cc}
+		\begin{minipage}[c]{4.3cm} 
+			#1
+		\end{minipage}&
+		\begin{minipage}[c]{6.9cm} 
+			#2
+		\end{minipage}
+	\end{tabular}
+}
+\newcommand{\divColEight}[2]{\begin{tabular}{cc}
+		\begin{minipage}[c]{5.3cm} 
+			#1
+		\end{minipage}&
+		\begin{minipage}[c]{6.4cm} 
+			#2
+		\end{minipage}
+	\end{tabular}
+}
+
+\begin{document}
+\begin{frame}
+\titlepage %in trang tiêu đề
+\end{frame}
+\begin{frame}{\textbf{\qquad Phân tích Đề thi THPT Quốc gia 2016}}~\\[-15pt]
+\cau{1}{Khảo sát sự biến thiên và vẽ đồ thị của hàm số $y=\dfrac{3-2x}{x-1}$}\pause
+\begin{itemize}
+	\item Tập xác định $D=\mathbb{R} \backslash \left\{ 1 \right\}$
+	\item Đạo hàm: $y'=\dfrac{-1}{(x-1)^2}<0,~\forall x\in D$
+	\item Hsnb trên các khoảng $(-\infty;1)$, $(1;+\infty)$ và không có đạt cực trị.		
+	\item $\lim\limits_{x\rightarrow -\infty} =-2;  \lim\limits_{x\rightarrow +\infty} =-2\Rightarrow y=-2$ là tiệm cận ngang.
+	\item $\lim\limits_{x\rightarrow 1^-} =-\infty; \lim\limits_{x\rightarrow 1^+} =+\infty\Rightarrow x=1$ là tiệm cận đứng.		
+	\item Bảng biến thiên
+	\begin{center}
+		\input{bbt}
+	\end{center}
+\end{itemize}
+\end{frame}
+
+\begin{frame}{\textbf{\qquad Phân tích Đề thi THPT Quốc gia 2016}}~\\[-20pt]
+	\begin{itemize}
+		\item Đồ thị\pause
+		\begin{center}
+			\input{dothi}
+		\end{center}
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{\textbf{\qquad Phân tích Đề thi THPT Quốc gia 2016}}
+	\cau{2}{Viết phương trình tiếp tuyến của $(C)$ biết tiếp tuyến song song với đường thẳng $\Delta:$ $y=-x+1$}\pause
+	Gọi $M(x_0;y_0)\in(C)$ là tiếp điểm, phương trình tiếp tuyến tại $M$ dạng \begin{equation}\label{pttt}
+	y=f'(x_0)(x-x_0)+y_0
+	\end{equation}
+	Tiếp tuyến song song với $\Delta: y=-x+1$ nên có hệ số góc $f'(x_0)=-1$	
+	$$(\ref{pttt})\Leftrightarrow \frac{-1}{(x_0-1)^2}=-1\Leftrightarrow (x_0-1)^2=1\Leftrightarrow \left[\begin{array}{l}
+	x_0-1=~~1\\x_0-1=-1
+	\end{array}\right.\Leftrightarrow
+	\left[\begin{array}{l}
+	x_0=2\\x_0=0
+	\end{array}\right.$$\pause
+	\begin{itemize}
+		\item<+-> Với $x_0=2\Rightarrow y_0=-1$. Phương trình tiếp tuyến là: $$y+1=-1(x-2)\Leftrightarrow y=-x+1 \mbox{ (loại)}$$
+		
+		\item<+-> Với $x_0=0\Rightarrow y_0=-3$. Phương trình tiếp tuyến là: $$y+3=-1(x-0)\Leftrightarrow y=-x-3$$
+	\end{itemize}~\\[25pt]
+\end{frame}
+
+\begin{frame}{\textbf{\qquad Phân tích Đề thi THPT Quốc gia 2016}}
+	\cau{3}{\begin{enumerate}[a)]
+			\item Tìm số phức liên hợp của số phức $z$ thỏa mãn $3z+9=2i.\overline{z}+11i$.
+			\item Giải hệ phương trình: $\log_{\frac{1}{2}} (x^2+5)+2\log_2(x+5)=0$
+		\end{enumerate}}\pause
+	\begin{enumerate}[a)]
+		\item<+-|alert@+> Gọi số phức 
+		$z=a+bi,~(a,b\in\mathbb{R})$. Ta có
+		\begin{equation}\label{eq2}
+		3z+9=2i.\bar{z}+11i\Leftrightarrow 3(a+bi)+9=2i(a-bi)+11i
+		\end{equation}
+		$$
+		(\ref{eq2})\Leftrightarrow \begin{cases}
+		3a+9=2b\\
+		3b=2a+11
+		\end{cases}\Leftrightarrow 
+		\begin{cases}
+		3a-2b=-9\\
+		-2a+3b=11
+		\end{cases}\Leftrightarrow\begin{cases}
+		a=-1\\
+		b=3
+		\end{cases}
+		$$
+		Ta có $z=-1+3i\Rightarrow \bar{z}=-1-3i$
+		\item<+-|alert@+>  Điều kiện: $\begin{cases}
+		x^2+5>0\\
+		x+5>0
+		\end{cases}\Leftrightarrow x+5>0\Leftrightarrow x>-5$\\
+		Khi đó, phương trình đã cho tương đương với
+		$$x^2+10x+25=x^2+5\Leftrightarrow 10x=-20\Leftrightarrow x=-2 \mbox{ (nhận)}$$
+	\end{enumerate}
+\end{frame}
+
+\begin{frame}{\textbf{\qquad Phân tích Đề thi THPT Quốc gia 2016}}
+	\cau{4}{Tính tích phân: $I=\int_{0}^{1} x\left(x+e^{z^2}\right)dx$}\pause
+	$$I=\int_{0}^{1} x\left(x+e^{z^2}\right)dx=\int_{0}^{1} x^2 dx+\int_{0}^{1}xe^{z^2}dx=I_1+I_2
+	$$
+	Ta tính
+	$$I_1=\int_{0}^{1} x^2dx= \left.\frac{x^3}{3}\right|_0^1=\frac{1}{3}$$
+	Đặt: $t=x^2\Rightarrow dt=2xdx\Rightarrow \dfrac{dt}{2}=xdx$. Đổi cận\\[-15pt]
+	$$\begin{tabular}{cc}
+		\input{doican.tex}& \raisebox{-0.25cm}{\parbox[b]{5cm}{$$\Rightarrow I_2=\int_0^1 e^t\frac{dt}{2}=\frac{1}{2}\bigg.e^t\bigg|_0^1=\frac{1}{2}e-\frac{1}{2}$$}}
+	\end{tabular}$$~\\[-10pt]
+	Vậy $I=I_1+I_2=\dfrac{1}{3}+\dfrac{1}{2}e-\dfrac{1}{2}=\dfrac{1}{2}e-\dfrac{1}{6}$
+\end{frame}
+
+\begin{frame}{\textbf{\qquad Phân tích Đề thi THPT Quốc gia 2016}}~\\[-20pt]
+	\cau{5}{Trong không gian $Oxyz$, cho 3 điểm $A(4;-4;3), B(1;3;-1),$ $C(-2;0;1)$. Viết phương trình mặt cầu $(S)$ đi qua các điểm $A, B, C$ và cắt hai mặt phẳng $(\alpha): \mbox{\textit{x}+\textit{y}+\textit{z}+2=0}$ và $(\beta): x-y-z-4=0$ theo hai giao tuyến là hai đường tròn có bán kính bằng nhau.}\pause
+	Gọi $I(a;b;c)$ là tâm của mặt cầu $(S)$.
+	Ta có hệ
+	$$\begin{cases}
+		IA=IB\\
+		IA=IC\\
+		d(I,(\alpha))=d(I,(\beta))
+	\end{cases}\Leftrightarrow \begin{cases}
+		a=1\\b=0\\c=3
+	\end{cases}\vee \begin{cases}
+		a=19/7\\
+		b=-12/7\\
+		c=-9/7
+	\end{cases}$$~\\[-10pt]\pause
+	\begin{itemize}[<+-|structure@+>]
+		\item Với $(a;b;c)=(1;0;3)$, phương trình mặt cầu $$(x-1)^2+y^2+(z-3)^2=25$$
+		
+		
+		\item  Với $(a;b;c)=(19/7;-12/7;-9/7)$, phương trình mặt cầu $$\left(x-\frac{19}{7}\right)^2+ \left(y+\frac{12}{7}\right)^2+ \left(z+\frac{9}{7}\right)^2=\frac{1237}{49}$$
+	\end{itemize}
+\end{frame}
+
+
+
+
+
+
+\begin{frame}{\textbf{\qquad Phân tích Đề thi THPT Quốc gia 2016}}
+	\cau{6}{\begin{enumerate}[a)]
+			\item Viết phương trình tiếp tuyến của $(C)$ biết tiếp tuyến song song với đường thẳng $\Delta:$ $y=-x+1$
+		\end{enumerate}}\pause
+	Ta có 
+	\begin{align*}
+	&~(\sin x+\cos x)^2=1+\cos x\\
+	\Leftrightarrow&~1+2\sin x\cos x=1+\cos x\\
+	\Leftrightarrow&~\cos x\cdot(2\sin x-1)=0\\
+	\Leftrightarrow&~\left[
+	\begin{array}{l}
+	\cos x=0\\[8pt]
+	\sin x=\dfrac{1}{2}
+	\end{array}
+	\right.
+	\Leftrightarrow \left[
+	\begin{array}{l}
+	x=\dfrac{\pi}{2}+k\pi\\[8pt]
+	x=\dfrac{\pi}{6}+k2\pi\\[8pt]
+	x=\dfrac{5\pi}{6}+k2\pi
+	\end{array} (k\in\mathbb{Z})\right.
+	\end{align*}
+	Vậy phương trình đã cho có 3 họ nghiệm.
+\end{frame}
+
+
+\begin{frame}{\textbf{\qquad Phân tích Đề thi THPT Quốc gia 2016}}~\\[-18pt]
+	\cau{6}{\begin{enumerate}[b)]
+			\item Một tổ gồm 9 học sinh nam và 3 học sinh nữ. Cần chia tổ đó thành 3 nhóm, mỗi nhóm 4 học sinh để đi làm 3 công việc trực nhật khác nhau. Tính xác suất để khi chia ngẫu nhiên ta được mỗi nhóm có đúng 1 nữ.
+		\end{enumerate}}\pause
+	\begin{itemize}
+		\item<+-|alert@+> Phép thử: ``Sắp 12 học sinh vào 3 nhóm khác nhau''\\[4pt]
+		$\Rightarrow$ Số phần tử của không gian mẫu: $n(\Omega)=\C_{12}^4.\C^4_8.\C_4^4=34~ 650$\\[5pt]
+		\item<+-|alert@+> Gọi $A$ là biến cố: ``Sắp 12 học sinh vào 3 nhóm \# có đúng 1 nữ''\\[4pt]
+		$\Rightarrow$ Số kết quả thuận lợi cho biến cố $A$ là $$n(A)=\C_3^1.\C_9^3.\C_2^1.\C_6^3.\C^1_1.\C^3_3=10~080$$
+		\item<+-|alert@+> Xác suất của biến cố là
+		$P(A)=\dfrac{n(\Omega)}{n(A)}=\dfrac{10~080}{34~ 650}=\dfrac{16}{55}$\\
+		\item<+-|alert@+> Vậy xác suất cần tìm là $\dfrac{16}{55}$
+	\end{itemize}
+\end{frame}
+
+
+\begin{frame}{\textbf{\qquad Phân tích Đề thi THPT Quốc gia 2016}}~\\[-15pt]
+	\Fontvi
+	\cau{7}{Cho khối chóp $S.ABC$ có $SA\perp$ với mặt đáy $(ABC)$, tam giác $ABC$ vuông cân tại $B$, $SA=a$, $SB$ hợp với đáy một góc $30^0$. Tính thể tích của khối chóp $S.ABC$ và tính khoảng cách giữa $AB$ và $SC$.}\pause
+	\divColSeven{
+		\begin{center}
+			\input{hinhcau7.tex}
+		\end{center}~\\[-20pt]
+		\begin{itemize}
+			\setlength{\itemindent}{-0.4cm}
+			\item Ta có $SA\perp AB$
+			\item $\Rightarrow AB$ là hình chiếu của $SB$ lên $(ABC)$, do đó $\widehat{SBA}=30^0$
+			
+		\end{itemize}\pause 
+	}{
+		\begin{itemize}
+		    \setlength{\itemindent}{-0.5cm}
+			\item $\cot \widehat{SBA}=\dfrac{AB}{SA} \Rightarrow BC=a\sqrt{3}$
+			\item $S_{ABC}=\dfrac{1}{2}AB.BC=\dfrac{1}{2}a\sqrt{3}.a\sqrt{3}=\dfrac{3a^2}{2}$
+			\item $V=\frac{1}{3}SA.S_{ABC}=\dfrac{1}{3}.a.\dfrac{3a^2}{2}=\dfrac{a^3}{2}$
+			\item Trong mp$(ABC)$, kẻ $AI\parallelsum BC$ và kẻ $CI\parallelsum AB$\\
+			$\Rightarrow ABCI$ là hình vuông cạnh $a\sqrt{3}$
+			\item $d(AB,SC)=d\Big(A;(SIC)\Big)=AH$
+			\item Tam giác $SAI$ vuông tại $A$ nên\\[-15pt] $$\frac{1}{AH^2}=\frac{1}{SA^2}+\frac{1}{AI^2}\Rightarrow AH=\frac{a\sqrt{3}}{2}$$~\\[-0.4cm]
+			$\Rightarrow$ khoảng cách của $AB$ và $SC$ bằng $\dfrac{a\sqrt{3}}{2}$
+		\end{itemize}
+	}
+\end{frame}
+
+
+
+\begin{frame}{\textbf{\qquad Phân tích Đề thi THPT Quốc gia 2016}}~\\[-20pt]
+	\Fontvi
+	\cau{8}{Trong mặt phẳng tọa độ $Oxy$, cho hình chữ nhật $ABCD$ có hình chiếu $B$ lên $AC$ là $E(5;0)$, trung điểm $AE$ và $CD$ lần lượt là $F(0;2), I\left(\dfrac{3}{2};-\dfrac{3}{2}\right)$. Viết phương trình đường thẳng $CD$.}\pause
+	\divColEight{
+		\begin{center}
+			\input{hinhcau8.tex}
+		\end{center}~\\[-20pt]
+		\begin{itemize}
+			\setlength{\itemindent}{-0.4cm}
+			\item $F$ là trung điểm $AE$ nên $A(-5;4)$
+			\item Phương trình đường thẳng $(AC):$ $2x+5y-10=0$
+		\end{itemize}\pause
+	}{
+	\begin{itemize}
+		\setlength{\itemindent}{-0.2cm}
+		\item Ta đi chứng minh: $BF\perp IF$.
+		\item $\overrightarrow{BF}=\dfrac{1}{2}\left(\overrightarrow{BA}+ \overrightarrow{BE}\right)$\\[8pt]
+		\item $\overrightarrow{FI}=\dfrac{1}{2}\left(\overrightarrow{FD}+\overrightarrow{FC}\right)=\dfrac{1}{2}\left(\overrightarrow{AD}+\overrightarrow{EC}\right)$
+		\item $\Rightarrow \overrightarrow{BF}.\overrightarrow{FI}=0$
+		\item $BF\perp IF$ nên có phương trình: $7x+3y-6=0$
+		\item $BE$ đi qua $E$ và vuông góc $EF$ nên có phương trình: $5x-2y-25=0$.
+		Do đó $B(7;5)$	
+		\item Từ đây tìm được phương trình $(CD):$ $2x-24y-39=0$
+	\end{itemize}
+}
+\end{frame}
+
+\begin{frame}{\textbf{\qquad Phân tích Đề thi THPT Quốc gia 2016}}
+	\Fontvi
+	\cau{9}{Giải bất phương trình: \begin{equation}\label{eq_9}
+			\left(2-\dfrac{3}{x}\right)\left(2\sqrt{x-1}-1\right) \geq \dfrac{4-8x+9x^2}{3x+2\sqrt{2x-1}}
+		\end{equation}}\pause
+	\begin{itemize}
+		\item<+-|alert@+>  ĐK: $x\geq 1$. Ta có
+		\begin{align}
+			(\ref{eq_9})&\Leftrightarrow \frac{(2x-3)\left(2\sqrt{x-1}-1\right)}{x}\geq \frac{9x^2-4(2x-1)}{3x+2\sqrt{2\sqrt{2x-1}}}\nonumber\\
+			&\Leftrightarrow \frac{(2x-3)\left(2\sqrt{x-1}-1\right)}{x}\geq 3x-2\sqrt{2x-1}\nonumber\\
+			&\Leftrightarrow (2x-3)\left(2\sqrt{x-1}-1\right)\geq 3x^2-2x\sqrt{2x-1} \quad(\mbox{do }x\geq 1)\nonumber\\
+			&\Leftrightarrow 2\left(x-1-\sqrt{x-1}\right)^2+\left(x-\sqrt{2x-1}\right)^2+2\left(\sqrt{x-1}+x-1\right)\leq 0\label{ptcau9_2}
+		\end{align}
+		\item<+-|alert@+> $\Rightarrow \mbox{VT}_{(\ref{ptcau9_2})}\geq 0$
+		\item<+-|alert@+> Vậy để $(\ref{ptcau9_2})$ xảy ra thì $\Leftrightarrow \mbox{VT}_{(\ref{ptcau9_2})}=0\Leftrightarrow
+		\begin{cases}
+		x-1=\sqrt{x-1}\\[6pt]
+		x=\sqrt{2x-1}\\[6pt]
+		x-1=0
+		\end{cases}\Leftrightarrow x=1$
+	\end{itemize}
+\end{frame}
+
+
+\begin{frame}{\textbf{\qquad Phân tích Đề thi THPT Quốc gia 2016}}~\\[-18pt]
+	\FontviTen
+	\cau{10}{Cho $a, b, c>0$, thỏa $c=\min\{a,b,c\}$. Tìm giá trị nhỏ nhất của biểu thức\\[-2pt]
+		\begin{equation}\label{eq_pt10}
+			P=\sqrt{\dfrac{a}{b+c}}+\sqrt{\dfrac{b}{c+a}}+\dfrac{2\ln\left( \dfrac{6(a+b)+4c}{a+b}\right)}{\sqrt[4]{\dfrac{8c}{a+b}}}
+		\end{equation}}\pause
+	\begin{itemize}
+		\item ~\\[-24pt]
+		\begin{align}
+			\sqrt{\frac{a}{b+c}}+\sqrt{\frac{b}{c+a}}=\frac{a^2}{a\sqrt{a(b+c)}} +\frac{b^2}{b\sqrt{b(c+a)}}&\geq \frac{(a+b)^2}{a\sqrt{a(b+c)}+ b\sqrt{b(c+a)}}\label{eq10_1}
+		\end{align}
+		\item Mặt khác, vì $c=\min \{a,b,c\}\Rightarrow a+b-2c\geq 0$. Nên ta có
+		$$a^2(b+c)+b^2(c+a)=ab(a+b-2c)+c(a+b)^2\leq \left(\frac{a+b}{2}\right)^2(a+b-2c)+c(a+b)^2$$
+		\begin{equation}\label{eq10_2}
+			\left(\frac{a+b}{2}\right)^2(a+b-2c)+c(a+b)^2=\frac{(a+b)^3+2c(a+b)^2}{4}
+		\end{equation}
+		\item Từ $(\ref{eq10_1})$ và $(\ref{eq10_2})$ suy ra $\sqrt{\dfrac{a}{b+c}}+\sqrt{\dfrac{b}{c+a}}\geq 2\sqrt{\dfrac{a+b}{a+b+2c}}$\\[12pt]
+		\item ~\\[-27pt]
+		\begin{equation}\label{eq10_3}
+		\ln\left[\frac{6(a+b)+4c}{a+b}\right]=\ln\left[2\left(\frac{a+b+2c}{a+b}+2\right)\right]\geq \ln\left[\left(\sqrt{1+\frac{2c}{a+b}}+\sqrt{2}\right)^2\right]
+		\end{equation}
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{\textbf{\qquad Phân tích Đề thi THPT Quốc gia 2016}}
+	\FontviTen
+	\begin{itemize}[<+-|structure@+>]
+		\item Mặt khác: vì $c=\min\{a,b,c\}\Rightarrow 2c\leq a+b$. Nên ta có
+		\begin{equation}\label{eq10_4}
+		\sqrt[4]{\frac{8c}{a+b}}\leq \sqrt[4]{2\cdot\frac{a+b+2c}{a+b}}\leq\frac{1}{2} \left(\sqrt{1+\frac{2c}{a+b}}+\sqrt{2}\right)
+		\end{equation}
+		\item Từ $(\ref{eq10_2}), (\ref{eq10_3}), (\ref{eq10_4})$ ta được\\[-15pt]
+		$$P\geq \frac{2}{\sqrt{1+\dfrac{2c}{a+b}}}+\frac{8\ln\left( \sqrt{1+\dfrac{2c}{a+b}}+\sqrt{2}\right)}{\sqrt{1+\dfrac{2c}{a+b}}+\sqrt{2}}$$
+		\item Đặt $t=\sqrt{1+\dfrac{2c}{a+b}}$, do $c=\min\{a,b,c\}\Rightarrow \dfrac{2c}{a+b}\leq 1\Rightarrow t\leq \sqrt{2}$\\[10pt]
+		\item Xét hàm $f(t)=\dfrac{2}{t}+\dfrac{8\ln\left(t+\sqrt{2}\right)}{t+\sqrt{2}}$, trên $t\in\left(0;\sqrt{2}\right]$\\[10pt]
+		\item Ta có
+		$$f'(t)=
+		\frac{\left(t-\sqrt{2}\right)\left(3t+\sqrt{2}\right)}{t^2\left(t+\sqrt{2}\right)^2}-\frac{8\ln\left(t+ \sqrt{2}\right)}{\left(t+\sqrt{2}\right)^2},~\forall t\in\left(0;\sqrt{2}\right] 
+		$$
+		\item Suy ra: $f(t)\geq f(\sqrt{2})=2\left(1+\ln 8\right)$. Vậy $P_{\min} =2\left(1+\ln 8\right)$.\\[8pt]
+		Dấu ``$=$'' xảy ra khi và chỉ khi $a=b=c$.
+	\end{itemize}
+\end{frame}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\end{document} 
