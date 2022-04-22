@@ -1,7 +1,7 @@
 
 > :memo: **Note:** Beamer.
 
-> file **.zip** contain source code **main.tex** + pictures that add in slide
+ file **.zip** contain source code **main.tex** + pictures that add in slide
 
 🧭 **Date : 21/April/2022** 🎯
 - add pictures with caption
