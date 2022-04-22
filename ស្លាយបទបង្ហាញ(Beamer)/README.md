@@ -6,3 +6,4 @@
 - [LaTeX Tutorial 11: Beamer Slide Presentation](https://www.youtube.com/watch?v=0fsWGg81RwU)
 - [VN tutorial-1 complicated stuffs](https://www.youtube.com/watch?v=QQ-KRmZ8g3A) | [VN tutorial-2](https://www.youtube.com/watch?v=9OSdNG8PVwo)
 - [5 videos explain all](https://www.youtube.com/playlist?list=PLCRFsOKSM7eO-WX2ENa5A5vtNx1kjPefY)
+- [Khmer Tutorial](https://www.youtube.com/playlist?list=PL8zHXdbVZ5-54v97hCP7YTV71IQlChdgy)
