@@ -1,1 +1,1 @@
-#### VN article, beamer
+#### VN article, beamer , thesis
