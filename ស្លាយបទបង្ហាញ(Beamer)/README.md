@@ -10,3 +10,8 @@
 
 ### Be smart !!! Read Document 
 - [Beamer-Overleaf](https://www.overleaf.com/learn/latex/Beamer%23Creating_a_table_of_contents)
+
+
+### Useful Link:
+
+- [Text Color /Highlight](https://micropore.wordpress.com/2010/12/15/text-color-in-beamer-presentations/) 
