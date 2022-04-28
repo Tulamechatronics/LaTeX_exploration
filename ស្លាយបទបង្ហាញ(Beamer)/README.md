@@ -15,3 +15,4 @@
 ### Useful Link:
 
 - [Text Color /Highlight](https://micropore.wordpress.com/2010/12/15/text-color-in-beamer-presentations/)  I add in 4. First Assessment
+- [Color in formula](https://tex.stackexchange.com/questions/280598/simpler-way-to-add-color-to-equations-in-math-mode)
